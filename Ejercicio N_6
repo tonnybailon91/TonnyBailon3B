@@ -1,0 +1,22 @@
+/*EJERCICIO 6
+Modificar el programa anterior para que en lugar de leer 8 números, 
+se puedan leer tantos números como se quiera hasta que llegue un cero.
+El resultado es la suma de todos los números leídos*/
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int numero = 0;
+        int sumatoria = 0;
+        do
+        {
+            Console.WriteLine("digite numeros: ");
+            numero = int.Parse(Console.ReadLine());
+            sumatoria = sumatoria + numero;
+
+        } while (numero != 0);
+        Console.WriteLine("la suma es: " + sumatoria);
+        Console.ReadKey();
+    }
+}
