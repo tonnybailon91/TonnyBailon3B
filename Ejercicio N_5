@@ -1,0 +1,22 @@
+//EJERCICIO 5 
+//Escribir un programa que lea exactamente 8 números y luego escriba la suma de todos ellos
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int numero;
+        int sumatoria = 0;
+        int t = 0;
+        while (t < 8)
+        {
+            Console.Write("digite numeros: ", t + 1);
+            numero = int.Parse(Console.ReadLine());
+            sumatoria += numero;
+            t++;
+        }
+
+        Console.WriteLine("el total de la suma es: " + sumatoria);
+        Console.ReadKey();
+    }
+}
