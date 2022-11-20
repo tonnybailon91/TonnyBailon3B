@@ -1,0 +1,23 @@
+//EJERCICIO 8
+//Escribir un programa que escriba todos los múltiplos de 3 del número 1 al 3000
+
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+		int Contador_Multiplo = 0;
+        int Multiplos_3 = 0;
+
+		do
+		{
+			Console.WriteLine("multiplos de 3 del o al 3000 son: {0}", Multiplos_3);
+			Contador_Multiplo = Contador_Multiplo + 1;
+            Multiplos_3 = Multiplos_3 + 3;
+		}
+		while 
+        (Multiplos_3 < 3000);
+
+		Console.WriteLine("los numero que son multiplos de 3 encontrados son : {0}", Contador_Multiplo);
+    }
+}
