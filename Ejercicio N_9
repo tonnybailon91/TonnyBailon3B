@@ -1,0 +1,26 @@
+/*EJERCICIO 9 Programa que lea una serie de números 
+(leer hasta que llegue el cero por ejemplo) 
+y que calcule su media aritmética */
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int numeros;
+        int suma = 0;
+        byte can; 
+        byte i;
+        string linea;
+        
+        Console.Write("Límite:"); linea = Console.ReadLine();
+        can = byte.Parse(linea);
+        for (i = 1; i <= can; i++)
+        {
+            Console.Write("Ingrese un número:"); linea = Console.ReadLine();
+            numeros = int.Parse(linea);
+            suma += numeros;
+        }
+        Console.WriteLine("La suma es : " + suma);
+        Console.WriteLine("La media aritmética: " + suma / can);
+    }
+}
