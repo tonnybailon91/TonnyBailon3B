@@ -1,0 +1,21 @@
+//EJERCICIO 10 Programa que lea un número entero por teclado y que calcule su factorial
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        string linea;
+        long total = 1;
+        byte numero; 
+        byte T;
+
+        Console.Write("Digite un numero: "); linea = Console.ReadLine();
+        numero = byte.Parse(linea);
+        for 
+        (T = 2; T <= numero; T++)
+        {
+            total = total * T;
+        }
+        Console.WriteLine("El factorial is:  " + total);
+    }
+}
